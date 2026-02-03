@@ -30,6 +30,11 @@
       color: white;
       font-size: 16px;
     }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 
@@ -57,14 +62,23 @@ function q2() {
   <button onclick="alert('Awww 🥹 same here 💕'); q3();">A looooot 💖</button>`;
 }
 
+// ✅ PHOTO QUESTION INSERTED HERE
 function q3() {
   box.innerHTML = `
-  <p><b>Can you meet me soon again?</b></p>
-  <button onclick="alert('Yesss 😍 Countdown started ⏳'); q4();">Yes 🤍</button>
-  <button onclick="alert('Updated answer detected: YES 😄💞'); q4();">Let’s see 👀</button>`;
+  <img src="https://drive.google.com/file/d/1UetblUtj5leowZTf1yssZQpBbKIO8-nn/view?usp=drivesdk" alt="Photo question">
+  <p><b>When did we take this photo?</b></p>
+  <button onclick="alert('Correct 💯 That day is forever 💙'); q4();">A day I’ll never forget 📸</button>
+  <button onclick="alert('Nope 😤 That day lives in my heart 🫶'); q4();">Just a random day</button>`;
 }
 
 function q4() {
+  box.innerHTML = `
+  <p><b>Can you meet me soon again?</b></p>
+  <button onclick="alert('Yesss 😍 Countdown started ⏳'); q5();">Yes 🤍</button>
+  <button onclick="alert('Updated answer detected: YES 😄💞'); q5();">Let’s see 👀</button>`;
+}
+
+function q5() {
   box.innerHTML = `
   <p><b>Will you be my best friend forever?</b></p>
   <button onclick="end()">Yes ♾️</button>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Important Life Test 💌</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial;
+      background: linear-gradient(#ffe6f0, #fff);
+      text-align: center;
+      padding: 20px;
+    }
+    h2 { color: #ff4d88; }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+    button {
+      display: block;
+      margin: 12px auto;
+      padding: 12px;
+      width: 100%;
+      border-radius: 25px;
+      border: none;
+      background: #ff6f91;
+      color: white;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card" id="box">
+  <h2>💌 Important Life Test 💌</h2>
+  <p>Hey 👀</p>
+  <p>Take this test. It’s very important 😌</p>
+  <button onclick="q1()">Start Test ▶️</button>
+</div>
+
+<script>
+function q1() {
+  box.innerHTML = `
+  <p><b>When should we meet?</b></p>
+  <button onclick="alert('Yayyy 😍 Waiting already… 💫'); q2();">Very soon 👀</button>
+  <button onclick="alert('Destiny checked… Result: VERY SOON 😏✨'); q2();">Whenever destiny plans 😌</button>`;
+}
+
+function q2() {
+  box.innerHTML = `
+  <p><b>How much do you like me?</b></p>
+  <button onclick="alert('System error ❌ Recalculating… A LOT MORE 😌❤️'); q3();">A little bit 🙂</button>
+  <button onclick="alert('Awww 🥹 same here 💕'); q3();">A looooot 💖</button>`;
+}
+
+function q3() {
+  box.innerHTML = `
+  <p><b>Can you meet me soon again?</b></p>
+  <button onclick="alert('Yesss 😍 Countdown started ⏳'); q4();">Yes 🤍</button>
+  <button onclick="alert('Updated answer detected: YES 😄💞'); q4();">Let’s see 👀</button>`;
+}
+
+function q4() {
+  box.innerHTML = `
+  <p><b>Will you be my best friend forever?</b></p>
+  <button onclick="end()">Yes ♾️</button>
+  <button onclick="alert('Wrong input ❌ Already best friends forever 🫶✨'); end();">No</button>`;
+}
+
+function end() {
+  box.innerHTML = `
+  <h2>🎉 HAPPY BIRTHDAY 🎉</h2>
+  <p>You passed the test 💯</p>
+  <p>Thank you for being my constant 💙</p>
+  <p>I’m always here 🫶</p>`;
+}
+</script>
+
+</body>
+</html>

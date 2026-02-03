@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>💖Small surprise for you💖</title>
+  <title>Small Surprise for You 💖</title>
+
+  <!-- MOBILE FULL-SCREEN OPTIMIZATION -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -43,13 +49,13 @@
 
 <body>
 
-<!-- 🎵 BACKGROUND MUSIC -->
+<!-- BACKGROUND MUSIC -->
 <audio id="bgMusic" loop>
-  <source src="07 - Yedemaina Sakhi.mp3" type="audio/mpeg">
+  <source src="07 - Yedemaina Sakhi.mp3?v=1" type="audio/mpeg">
 </audio>
 
 <div class="box" id="startBox">
-  <h2>💖 Small surprise for you 💖</h2>
+  <h2>💖 Life Test 💖</h2>
   <p>Only special people can pass 😌</p>
   <button onclick="startTest()">Start Test</button>
 </div>
@@ -62,16 +68,16 @@
 </div>
 
 <div class="box" id="finalMessage" style="display:none;">
-  <!-- 🎥 VIDEO CLIP -->
+  <!-- VIDEO CLIP -->
   <video controls>
-    <source src="Snapchat-1998988501.mp4" type="video/mp4">
+    <source src="Snapchat-1998988501.mp4?v=1" type="video/mp4">
   </video>
 
-  <!-- 💖 FINAL MESSAGE -->
-  <h2>Happy Birthday kaavulu😘💖</h2>
+  <!-- FINAL MESSAGE -->
+  <h2>Happy Birthday 🎂💖</h2>
   <p>
-    Thanks for being my favorite human,  
-    my safe place, and my best friend forever 🫶,love you so much...😘😘🤍
+    Thanks for being my favorite human,<br>
+    my safe place, and my best friend forever 🫶
   </p>
 
   <button onclick="restartTest()">Restart Test 🔁</button>
@@ -84,7 +90,7 @@ const questions = [
     options: ["Very soon", "Whenever"],
     correct: 0,
     msgRight: "Yayy 🥹 I was hoping you’d say that. Counting days already 💕",
-    msgWrong: "Hmm 😌 system says “soon” is the correct answer."
+    msgWrong: "Hmm 😌 system says “soon” is the correct answer 😉"
   },
   {
     q: "How much do you like me?",
@@ -97,7 +103,7 @@ const questions = [
     q: "When did we take this photo?",
     options: ["5th November 2024", "6th November 2024"],
     correct: 0,
-    photo: "IMG_20260203_200644.jpg",
+    photo: "IMG_20260203_200644.jpg?v=1",
     msgRight: "Yayy 🥹 I remember this day perfectly! Such a special memory 💖",
     msgWrong: "Oops 😅 Not this one! It was 5th November 2024 🫶"
   },
